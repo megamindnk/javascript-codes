@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Reverse number</title>
+</head>
+<body>
+	<h1> program to reverse 	number</h1>
+	
+	<script type="text/javascript">
+		 function reverse()
+		 {	
+		 	var rem,rev=0;
+		 	var no=Number(prompt("enter a number"));
+		 	
+		 	document.write("you entered number\t"+no);
+		 		while(no>0)
+		 		{
+		 			rem=no%10;
+		 			rev=rev*10+rem;
+		 			no=parseInt(no/10);
+		 		}
+		 document.write("<br>the reverse no is "+rev);
+		 }
+	</script>
+	<button onclick="reverse()"> click me to execute</button>
+</body>
+</html> 
