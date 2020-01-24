@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>sum of digitd</title>
+</head>
+<body>
+<h1>sum of digits</h1>
+<script type="text/JavaScript">
+
+var n=prompt("enter a number");
+document.write("entered number is"+n);
+var rem=0,sum=0;
+function sum1(n)
+{
+while(n!=0)
+{
+	rem=n%10;
+	sum=sum+rem;
+	n=parseInt(n/10);
+}
+alert("the sum of digits is"+sum);
+}
+</script>
+<button onClick="sum1(n)">click me</button>
+</body>
+</html>
