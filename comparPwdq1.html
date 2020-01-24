@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Reverse number</title>
+</head>
+<body>
+	<h1> program to compare password</h1>
+	
+	<script type="text/javascript">
+		 function cmprpwd()
+		 {
+		 	var pwd=(document.getElementById("pwd").value);
+		 	var cnfrm=(document.getElementById("confirm").value);
+			var n=pwd.localeCompare(cnfrm);
+			if(n==0)
+			{	
+				document.write("the passwords match");
+			}
+			else
+			{
+				document.write("the passwords dont match");
+			}
+		 }
+</script>
+<form>
+Enter password:&nbsp;<input type=password placeholder="enter your password" id="pwd"><br>
+
+Confirm password:&nbsp;<input type=password placeholder="enter your password" id="confirm"><br>
+<button onclick="cmprpwd()">confirm</button>
+</body>
+</html> 
