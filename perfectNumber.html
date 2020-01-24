@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>perfect number</title>
+</head>
+<body>
+<h1>perfect</h1>
+<script type="text/JavaScript">
+
+
+function sum1()
+{
+	var rem=0,sum=0,i=9;
+	var n=prompt("enter a number");
+	document.write("entered number is"+n);
+	while(i!=0)
+	{
+		if((n%i==0)&&(i==n))
+		{
+			sum=i+sum;
+		}
+	
+		i--;		
+	}
+	alert("the sum of digits \tis"+sum);
+	if(sum == n)
+	{
+		document.write("<br>number is perfect")
+	}
+	else
+	{
+		document.write("number is not perfect");
+	}
+}
+</script>
+<button onClick="sum1()">click me</button>
+</body>
+</html
